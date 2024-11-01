@@ -9,19 +9,21 @@ import photo from '../assets/photo.jpg'
 const classes = {
     root: {
         margin: '50px auto',
-        width: '95%',
+        width: '90%',
         minHeight: '100px',
         display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     leftContainer: {
-        width: '45%',
-        padding: '50px 30px 50px 50px'
+        width: '40%',
+        padding: '50px'
     },
     rightContainer: {
-        width: '45%',
-        padding: '50px 50px 50px 30px',
+        width: '40%',
+        padding: '50px',
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'right',
         alignItems: 'center'
     },
     textGreeting: {

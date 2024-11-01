@@ -26,3 +26,7 @@
 .animate__pulse {
     animation: customPulse 2s infinite;
 }
+
+.animate__fadeIn {
+    animation-duration: 2s;
+}
