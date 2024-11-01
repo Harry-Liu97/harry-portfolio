@@ -10,7 +10,8 @@ const classes = {
         position: 'fixed', 
         bottom: 0,         
         Right: 0,
-        zIndex: '10'
+        zIndex:10,
+        pointerEvents: 'none'
     },
     buttonStyle: {
         width: 80,
@@ -26,6 +27,7 @@ const classes = {
             backgroundColor: '#303f9f',
         },
         boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.5)', 
+        pointerEvents: 'auto'
     }
 }
 
