@@ -2,7 +2,6 @@ import * as React from 'react'
 import { Box, Button } from "@mui/material"
 import 'animate.css/animate.min.css'
 import './animation-style.css'
-import zIndex from '@mui/material/styles/zIndex'
 
 const classes = {
     root: {
