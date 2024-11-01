@@ -1,5 +1,7 @@
 import React from "react"
 import '../component/font-style.css'
+import 'animate.css/animate.min.css'
+import './animation-style.css'
 import { Box, Typography, Link } from "@mui/material"
 import githubIcon from '../assets/github.svg'
 import linkedinIcon from '../assets/linkedin.svg'
@@ -55,7 +57,7 @@ const classes = {
 
 const NavBar = () => {
     return (
-        <Box sx={classes.root}>
+        <Box sx={classes.root} className='animate__animated animate__slideInDown'>
             <Box sx={classes.textGroup}>
                 <Typography sx={classes.text}>About</Typography>
                 <Typography sx={classes.text}>Projects</Typography>
