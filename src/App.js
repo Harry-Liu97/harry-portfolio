@@ -1,7 +1,9 @@
 import React from "react"
 import { Box } from "@mui/material"
 import NavBar from "./component/navBar"
+import FloatButton from "./component/FloatButton"
 import Introduction from './component/introduction'
+import About from "./component/about"
 
 const classes = {
   root: {
@@ -15,7 +17,9 @@ function App() {
   return (
     <Box sx={classes.root}>
       <NavBar />
+      <FloatButton />
       <Introduction />
+      <About />
     </Box>
   )
 }
