@@ -11,9 +11,14 @@ const classes = {
     root: {
         width: '100%',
         minHeight: '80px',
-        border: '1px solid #ccc',
+        border: '2px solid #ccc',
         display: 'flex',
-        justifyContent: 'space-around'
+        justifyContent: 'space-around',
+        position: 'fixed', 
+        top: 0,         
+        left: 0,           
+        backgroundColor: '#D3D3D3',
+        zIndex: 10,
     },
     textGroup: {
         width: '40%',

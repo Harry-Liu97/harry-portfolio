@@ -41,7 +41,8 @@ const classes = {
     },
     textContent: {
         width: '90%',
-        marginTop: '20px'
+        marginTop: '20px',
+        fontFamily: 'Georgia, serif'
     },
     buttonResume: {
         color: '#000000',
