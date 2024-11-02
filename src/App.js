@@ -5,12 +5,13 @@ import FloatButton from "./component/FloatButton"
 import Introduction from './component/introduction'
 import About from "./component/about"
 import PersonalGrowthTimeline from "./component/timeline"
+import Skills from "./component/skills"
 
 const classes = {
   root: {
     width: '100vw',
     minHeight: '100vh',
-    backgroundColor: '#D3D3D3'
+    backgroundColor: '#E5E5E5'
   }
 }
 
@@ -22,6 +23,7 @@ function App() {
       <Introduction />
       <About />
       <PersonalGrowthTimeline />
+      <Skills />
     </Box>
   )
 }
