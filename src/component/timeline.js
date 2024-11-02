@@ -26,7 +26,7 @@ import ChangeCircleIcon from '@mui/icons-material/ChangeCircle'
 const classes = {
     root: {
         width: '90%',
-        minHeight: '20000px',
+        minHeight: '100px',
         margin: '0 auto',
     }
 }
