@@ -8,7 +8,9 @@ const classes = {
     root: {
         width: '90%',
         minHeight: '100px',
-        margin: '200px auto',
+        margin: '0 auto',
+        marginTop: '150px',
+        marginBottom: '100px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'

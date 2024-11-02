@@ -4,6 +4,7 @@ import NavBar from "./component/navBar"
 import FloatButton from "./component/FloatButton"
 import Introduction from './component/introduction'
 import About from "./component/about"
+import PersonalGrowthTimeline from "./component/timeline"
 
 const classes = {
   root: {
@@ -20,6 +21,7 @@ function App() {
       <FloatButton />
       <Introduction />
       <About />
+      <PersonalGrowthTimeline />
     </Box>
   )
 }
