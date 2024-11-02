@@ -19,8 +19,7 @@ const classes = {
         textAlign: 'center'
     },
     photoBox: {
-        width: '350px',
-        height: '350px',
+        width: '80%',
         padding: '20px',
         objectFit: 'cover',
         borderRadius: '50px'
