@@ -11,7 +11,7 @@ import TabContext from '@mui/lab/TabContext'
 import TabList from '@mui/lab/TabList'
 import TabPanel from '@mui/lab/TabPanel'
 import { useInView } from 'react-intersection-observer'
-import skillPhoto from '../assets/skills.webp'
+import skillPhoto from '../assets/skills.jpg'
 
 const classes = {
     root: {
