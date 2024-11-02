@@ -336,7 +336,6 @@ const Career = () => {
 }
 
 const PersonalGrowthTimeline = () => {
-  const {ref, inView} = useInView({ threshold: 0.1 })
   const [value, setValue] = React.useState('2')
   const handleChange = (event, newValue) => {
     setValue(newValue)
@@ -346,7 +345,7 @@ const PersonalGrowthTimeline = () => {
         <Box sx={classes.root} >
           <TabContext value={value}>
             <Box sx={{ display: 'flex', justifyContent: 'center' }} >
-              <TabList onChange={handleChange} aria-label="lab API tabs example" ref={ref} className={inView ? "animate__animated animate__fadeIn" : ""}>
+              <TabList onChange={handleChange} aria-label="lab API tabs example">
                 <Tab icon={<WorkIcon />} label="Career" value="1" sx={{  margin: '0 30px' }} />
                 <Tab icon={<SchoolIcon />} label="Education" value="2" sx={{  margin: '0 30px' }} />
                 <Tab icon={<GradeIcon />} label="Certificate" value="3" sx={{  margin: '0 30px' }} />

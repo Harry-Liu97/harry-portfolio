@@ -225,7 +225,6 @@ const Other = () => {
 }
 
 const Projects = () => {
-    const [ref, inView] = useInView({ threshold: 0.1 })
     const [value, setValue] = useState('1')
     const handleChange = (event, newValue) => {
         setValue(newValue)
@@ -239,16 +238,13 @@ const Projects = () => {
                     fontSize: '2rem',
                     fontWeight: 'bold',
                     textAlign: 'center',
-                    opacity: inView ? '1' : 0 
                 }}
-                ref={ref} 
-                className={inView ? "animate__animated animate__fadeIn" : ""}
             >
                 Projects
             </Typography>
             <TabContext value={value}>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }} >
-                            <TabList onChange={handleChange} aria-label="lab API tabs example" ref={ref} className={inView ? "animate__animated animate__fadeIn" : ""} sx={{ opacity: inView ? '1' : 0 }}>
+                            <TabList onChange={handleChange} aria-label="lab API tabs example">
                             <Tab label="All" value="1" />
                             <Tab label="Web" value="2" />
                             <Tab label="Other" value="3" />
