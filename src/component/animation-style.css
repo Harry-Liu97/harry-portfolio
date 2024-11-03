@@ -30,3 +30,19 @@
 .animate__fadeIn {
     animation-duration: 2s;
 }
+
+@keyframes customBounce {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(-30px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.animate__bounce {
+    animation: customBounce 3s ease-in-out infinite
+}

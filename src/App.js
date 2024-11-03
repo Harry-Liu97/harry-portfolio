@@ -7,6 +7,7 @@ import About from "./component/about"
 import PersonalGrowthTimeline from "./component/timeline"
 import Skills from "./component/skills"
 import Projects from "./component/projects"
+import Contact from './component/contact'
 
 const classes = {
   root: {
@@ -26,6 +27,7 @@ function App() {
       <PersonalGrowthTimeline />
       <Skills />
       <Projects />
+      <Contact />
     </Box>
   )
 }
