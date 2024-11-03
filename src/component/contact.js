@@ -11,8 +11,7 @@ const classes = {
         minHeight: '100px',
         margin: '0 auto',
         borderRadius: '30px',
-        padding: '10px',
-        marginTop: '20px',
+        paddingTop: '80px',
         backgroundColor: '#D3D3D3', 
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.4)',
     },
@@ -63,7 +62,7 @@ const Contact = () => {
     }
     return (
 
-        <Box sx={classes.root}>
+        <Box sx={classes.root} id='contact'>
             <Typography sx={{ textAlign: 'center', fontSize: '2.5rem', fontWeight: 'bold' }}>
                 Get In Touch 
             </Typography>

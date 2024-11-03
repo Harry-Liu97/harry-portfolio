@@ -184,7 +184,7 @@ const NavBar = () => {
                 <Link href="#projects" underline="none" color="#000000">
                     <Typography sx={classes.text}>Projects</Typography>
                 </Link>
-                <Link href="#" underline="none" color="#000000">
+                <Link href="#contact" underline="none" color="#000000">
                     <Typography sx={classes.text}>Contact</Typography>
                 </Link>
             </Box>
