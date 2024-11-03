@@ -12,9 +12,9 @@ import githubIcon from '../assets/github.svg'
 
 const classes = {
     root: {
-        width: '90%',
+        width: '100%',
         minHeight: '1200px',
-        margin: '0 auto',
+        paddingTop: '80px',
     },
     cardItem: {
         margin: '30px 0',
@@ -49,8 +49,8 @@ const CardItem = ({imageURL, title, des, proURL}) => {
     return (
         <Card 
             sx={{ 
-                width: 330, 
-                height: 410,
+                width: 300, 
+                minHeight: 380,
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
@@ -134,7 +134,7 @@ const All = () => {
         } else {
             setVisibleCards([true, false, false, false, false, false])
         }
-    }, [inView, visibleCards])
+    }, [inView])
 
     return (
         <Grid container ref={ref} justifyContent="flex-start">
@@ -144,7 +144,7 @@ const All = () => {
                         <Box className="animate__animated animate__fadeIn" >
                             <CardItem 
                                 imageURL={projects_All[index].imageURL} 
-                                title={projects_All[index].title} 
+                                title={projects_All[index].title}
                                 des={projects_All[index].des} 
                                 proURL={projects_All[index].proURL} 
                             />
@@ -183,7 +183,7 @@ const Web = () => {
         } else {
             setVisibleCards([true, false, false, false, false])
         }
-    }, [inView, visibleCards])
+    }, [inView])
 
     return (
         <Grid container ref={ref} justifyContent="flex-start">
@@ -231,7 +231,7 @@ const Projects = () => {
     }
 
     return (
-        <Box sx={classes.root}>
+        <Box sx={classes.root} id='projects'>
             <Typography 
                 sx={{ 
                     marginBottom: '20px',

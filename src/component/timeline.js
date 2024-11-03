@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { useInView } from 'react-intersection-observer'
 import 'animate.css/animate.min.css'
 import './animation-style.css'
@@ -25,9 +25,8 @@ import ChangeCircleIcon from '@mui/icons-material/ChangeCircle'
 
 const classes = {
     root: {
-        width: '90%',
+        width: '100%',
         minHeight: '100px',
-        margin: '0 auto',
     }
 }
 
@@ -345,7 +344,13 @@ const PersonalGrowthTimeline = () => {
         <Box sx={classes.root} >
           <TabContext value={value}>
             <Box sx={{ display: 'flex', justifyContent: 'center' }} >
-              <TabList onChange={handleChange} aria-label="lab API tabs example">
+              <TabList 
+                onChange={handleChange}
+                aria-label="scrollable force tabs example" 
+                variant="scrollable" 
+                scrollButtons   
+                allowScrollButtonsMobile
+              >
                 <Tab icon={<WorkIcon />} label="Career" value="1" sx={{  margin: '0 30px' }} />
                 <Tab icon={<SchoolIcon />} label="Education" value="2" sx={{  margin: '0 30px' }} />
                 <Tab icon={<GradeIcon />} label="Certificate" value="3" sx={{  margin: '0 30px' }} />

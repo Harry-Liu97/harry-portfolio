@@ -35,9 +35,27 @@ const classes = {
         width: '80%',
         borderRadius: '50px'
     },
+    contentBox: {
+        display: 'flex', 
+        flexDirection: {
+            xs: 'column',
+            sm: 'row',
+            md: 'row'
+        },
+        justifyContent:{
+            xs: 'center',
+            sm: 'space-between', 
+            md: 'space-between', 
+        }, 
+        alignItems: 'center'
+    },
     icons: {
         textDecoration: 'none',
-        margin: '20px 20px',
+        margin: {
+            xs: '10px',
+            sm: '20px',
+            md: '20px',
+        }, 
         transition: 'transform 0.3s ease, background-color 0.3s ease',
         '&:hover': {
             transform: 'scale(1.3)',
@@ -119,7 +137,7 @@ const CardItem = ( {number} ) => {
 const Frontend = () => {
     const [ref, inView] = useInView({ threshold: 0.1 })
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box sx={classes.contentBox}>
             <Box sx={{ width: '70%', display: 'flex', flexWrap: 'wrap', opacity: inView ?'1':'0' }} ref={ref} className={inView ? "animate__animated animate__flipInX" : ""}>
                 <Link href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer" sx={classes.icons} > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </Link>
                 <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" sx={classes.icons} > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </Link>
@@ -138,7 +156,7 @@ const Frontend = () => {
 const Backend = () => {
     const [ref, inView] = useInView({ threshold: 0.1 })
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box sx={classes.contentBox}>
             <Box sx={{ width: '70%', display: 'flex', flexWrap: 'wrap', opacity: inView ?'1':'0' }} ref={ref} className={inView ? "animate__animated animate__flipInX" : ""}>
                 <Link href="https://nodejs.org" target="_blank" rel="noreferrer" sx={classes.icons} > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </Link> 
                 <Link href="https://spring.io/" target="_blank" rel="noreferrer" sx={classes.icons} > <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </Link>
@@ -155,7 +173,7 @@ const Backend = () => {
 const AIML = () => {
     const [ref, inView] = useInView({ threshold: 0.1 })
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box sx={classes.contentBox}>
             <Box sx={{ width: '70%', display: 'flex', flexWrap: 'wrap', opacity: inView ?'1':'0' }} ref={ref} className={inView ? "animate__animated animate__flipInX" : ""}>
                 <Link href="https://pandas.pydata.org/" target="_blank" rel="noreferrer" sx={classes.icons}> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </Link> 
                 <Link href="https://pytorch.org/" target="_blank" rel="noreferrer" sx={classes.icons} > <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </Link> 
@@ -172,7 +190,7 @@ const AIML = () => {
 const Database = () => {
     const [ref, inView] = useInView({ threshold: 0.1 })
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box sx={classes.contentBox}>
             <Box sx={{ width: '70%', display: 'flex', flexWrap: 'wrap', opacity: inView ?'1':'0' }} ref={ref} className={inView ? "animate__animated animate__flipInX" : ""}>
                 <Link href="https://www.postgresql.org" target="_blank" rel="noreferrer" sx={classes.icons} > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </Link> 
                 <Link href="https://www.mysql.com/" target="_blank" rel="noreferrer" sx={classes.icons} > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </Link> 
@@ -185,7 +203,7 @@ const Database = () => {
 const Other = () => {
     const [ref, inView] = useInView({ threshold: 0.1 })
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box sx={classes.contentBox}>
             <Box sx={{ width: '70%', display: 'flex', flexWrap: 'wrap', opacity: inView ?'1':'0' }} ref={ref} className={inView ? "animate__animated animate__flipInX" : ""}>
                 <Link href="https://aws.amazon.com" target="_blank" rel="noreferrer" sx={classes.icons} > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </Link> 
                 <Link href="https://git-scm.com/" target="_blank" rel="noreferrer" sx={classes.icons} > <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </Link> 
@@ -225,6 +243,7 @@ const Skills = () => {
                 </Typography>
                 <Box 
                     sx={{
+                        width: '100%',
                         border: '2px solid #D3D3D3',
                         borderRadius: '30px',
                         padding: '10px',
@@ -234,7 +253,13 @@ const Skills = () => {
                 >
                     <TabContext value={value}>
                         <Box sx={{ display: 'flex', justifyContent: 'center' }} >
-                            <TabList onChange={handleChange} aria-label="lab API tabs example">
+                            <TabList 
+                                onChange={handleChange}
+                                aria-label="scrollable force tabs example" 
+                                variant="scrollable" 
+                                scrollButtons   
+                                allowScrollButtonsMobile
+                            >
                             <Tab label="Frontend" value="1" />
                             <Tab label="Backend" value="2" />
                             <Tab label="AI / ML" value="3" />

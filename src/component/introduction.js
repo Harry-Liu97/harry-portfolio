@@ -1,29 +1,41 @@
 import React, { useEffect, useState } from "react"
 import 'animate.css/animate.min.css'
 import './animation-style.css'
-import { Box, Typography, Button } from "@mui/material"
+import { Box, Grid, Typography, Button } from "@mui/material"
 import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 import photoCartoon from '../assets/photo-cartoon.jpg'
 import photo from '../assets/photo.jpg'
 
 const classes = {
     root: {
-        margin: '50px auto',
+        margin: '0 auto',
         width: '90%',
+        paddingTop: '150px',
         minHeight: '100px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
     },
     leftContainer: {
-        width: '40%',
-        padding: '50px'
+        padding: '50px',
+        display: {
+            xs: 'flex',
+            sm: 'flex',
+            md: 'block'
+        },
+        flexDirection: {
+            xs: 'column',
+            sm: 'column',
+        },
     },
     rightContainer: {
-        width: '40%',
         padding: '50px',
         display: 'flex',
-        justifyContent: 'right',
+        justifyContent: {
+            xs:'center',
+            sm: 'center', 
+            md: 'right'
+        },
         alignItems: 'center'
     },
     textGreeting: {
@@ -36,17 +48,24 @@ const classes = {
         minWidth: '200px', 
     },
     textTitle: {
-        minHeight: '90px',
-        fontSize: '3.3rem',
+        minHeight: {
+            xs: '150px',
+            sm: '90px',
+            md: '90px'
+        },
+        fontSize: '2.8rem',
         fontWeight: '550',
         position: 'relative',
     },
     textContent: {
         width: '90%',
-        marginTop: '20px',
         fontFamily: 'Georgia, serif'
     },
     buttonResume: {
+        width: {
+            xs: '70%',
+            sm: '50%'
+        },
         color: '#000000',
         marginTop: '30px',
         border: '3px solid #A9A9A9',
@@ -55,12 +74,21 @@ const classes = {
         padding: '10px 20px'
     },
     photoBox: {
-        width: '350px',
-        height: '350px',
+        width: {
+            xs:'100%',
+            sm: '70%', 
+            md: '80%'
+        },
+        height: {
+            xs:'100%',
+            sm: '70%', 
+            md: '80%'
+        },
         borderRadius: '50%',
         objectFit: 'cover',
         transition: '0.3s ease',
         cursor: 'pointer',
+        overflow: 'hidden',
     }
 }
 
@@ -72,7 +100,6 @@ const TypeWriter = ({ messages }) => {
     useEffect(() => {
         const curMessage = messages[curIndex]
         let index = isDeleting ? curMessage.length : 0
-        
 
         const typingInterval = setInterval(() => {
             if (isDeleting) {
@@ -108,7 +135,6 @@ const TypeWriter = ({ messages }) => {
     
     return(
         <Typography sx={classes.textTitle} className="animate__animated animate__slideInLeft">{displayText}</Typography>
-        
     ) 
 }
 
@@ -126,19 +152,16 @@ const Introduction = () => {
     }
 
     return (
-        <Box sx={classes.root}>
-            <Box sx={classes.leftContainer}>
+        <Grid container sx={classes.root}>
+            <Grid item xs={12} sm={12} md={6} sx={classes.leftContainer}>
                 <Typography sx={classes.textGreeting} className="animate__animated animate__jackInTheBox">
                     Hello, I'm
                 </Typography>
-
                 <TypeWriter messages={messages} />
-
                 <Typography sx={classes.textContent} className="animate__animated animate__slideInLeft">
                     As a full stack engineer, passionate about building efficient and user-friendly applications, 
                     the goal is to create technical solutions that are both usable and high-performing through continuous learning and practice.
                 </Typography>
-
                 <Button 
                     variant="outlined" 
                     endIcon={<OpenInNewIcon/>} 
@@ -150,10 +173,9 @@ const Introduction = () => {
                 > 
                     Resume
                 </Button>
+            </Grid >
 
-            </Box>
-
-            <Box sx={classes.rightContainer}>
+            <Grid item xs={12} sm={12} md={6} sx={classes.rightContainer}>
                 <Box 
                     component='img'
                     src={currentPhoto} 
@@ -163,9 +185,8 @@ const Introduction = () => {
                     onMouseLeave={handleMouseLeave}
                     className='animate__animated animate__slideInRight'
                 />
-        
-            </Box>
-        </Box>
+            </Grid>
+        </Grid>
     )
 }
 

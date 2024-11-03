@@ -8,9 +8,8 @@ const classes = {
     root: {
         width: '90%',
         minHeight: '100px',
-        margin: '0 auto',
-        marginTop: '150px',
-        marginBottom: '100px',
+        margin: '100px auto',
+        paddingTop: '80px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
@@ -38,10 +37,28 @@ const classes = {
 
     },
     rightContainer: {
-        textAlign: 'right',
-        paddingRight: '60px'
+        paddingRight: {
+            md: '60px',
+        },
+        textAlign: {
+            md: 'right'
+        },
+        display: {
+            md: 'block',
+            sm: 'flex',
+            xs: 'flex'
+        },
+        justifyContent: {
+            sm: 'space-around',
+            xs: 'space-around'
+        }
     },
     expYear: {
+        textAlign: {
+            md: 'right',
+            sm: 'center',
+            xs: 'center'
+        },
         fontSize: '3rem',
         fontWeight: 600
     },
@@ -56,7 +73,7 @@ const classes = {
 
 const About = () => {
     return (
-        <Grid container spacing={0} sx={classes.root}>
+        <Grid container spacing={0} sx={classes.root} id='about'>
             <Grid item xs={12} sm={12} md={4} sx={classes.leftContainer} className="animate__animated animate__slideInLeft">
                 <Box
                     component='img'
