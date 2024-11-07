@@ -4,6 +4,7 @@ import NavBar from "./component/navBar"
 import FloatButton from "./component/FloatButton"
 import Introduction from './component/introduction'
 import About from "./component/about"
+import Personality from "./component/personality/mbti"
 import PersonalGrowthTimeline from "./component/timeline"
 import Skills from "./component/skills"
 import Projects from "./component/projects"
@@ -25,6 +26,7 @@ function App() {
       <FloatButton />
       <Introduction />
       <About />
+      <Personality />
       <PersonalGrowthTimeline />
       <Skills />
       <Projects />
