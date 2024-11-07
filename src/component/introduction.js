@@ -39,7 +39,11 @@ const classes = {
         alignItems: 'center'
     },
     textGreeting: {
-        fontSize: '3.2rem',
+        fontSize: {
+            md: '3.2rem',
+            sm: '3.2rem',
+            xs: '2.7rem'
+        },
         fontWeight: 'bold',
         background: 'linear-gradient(45deg, #4974D8, #D54F93)',
         WebkitBackgroundClip: 'text',
@@ -49,11 +53,15 @@ const classes = {
     },
     textTitle: {
         minHeight: {
-            xs: '150px',
+            xs: '70px',
             sm: '90px',
             md: '90px'
         },
-        fontSize: '2.8rem',
+        fontSize: {
+            md: '2.8rem',
+            sm: '2.8rem',
+            xs: '1.6rem'
+        },
         fontWeight: '550',
         position: 'relative',
     },
@@ -155,7 +163,7 @@ const Introduction = () => {
         <Grid container sx={classes.root}>
             <Grid item xs={12} sm={12} md={6} sx={classes.leftContainer}>
                 <Typography sx={classes.textGreeting} className="animate__animated animate__jackInTheBox">
-                    Hello, I'm
+                    Hello, I'm a
                 </Typography>
                 <TypeWriter messages={messages} />
                 <Typography sx={classes.textContent} className="animate__animated animate__slideInLeft">

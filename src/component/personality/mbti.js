@@ -32,7 +32,7 @@ const classes = {
         fontSize: '1.5rem',
         fontWeight: 'bold',
         fontFamily: 'monospace',
-        margin: '10px 0'
+        margin: '30px 0 10px 0'
     },
     titleRight: {
         fontSize: '2rem',
@@ -97,33 +97,25 @@ const Personality = () => {
                     <Typography sx={classes.titleLeft}>ENFP-T</Typography>
                     
                     <Typography>
-                        Also known as the "Campaigner" personality type. This means I am enthusiastic,
-                        creative, and driven by possibilities. I thrive in environments that allow me to explore new ideas
-                        and connect with others.
+                        Also known as the "Campaigner" personality type, ENFP-Ts are enthusiastic, creative, and driven by possibilities. I thrive in environments that allow me to explore new ideas and connect with others.
                     </Typography>
         
                     <Typography sx={classes.titleLeft}>How it Affects My Work</Typography>
 
                     <Typography>
-                        My ENFP-T personality makes me an idea generator and a team motivator. I enjoy brainstorming
-                        innovative solutions and collaborating with others to bring ideas to life. However, I sometimes
-                        struggle with staying focused on one task at a time, preferring to jump between multiple
-                        exciting projects.
+                        My ENFP-T personality makes me an idea generator and a team motivator. I enjoy brainstorming innovative solutions and collaborating with others to bring ideas to life. However, I sometimes struggle with staying focused on one task at a time, preferring to jump between multiple exciting projects.
                     </Typography>
             
                     <Typography sx={classes.titleLeft}>How It Influences My Decision-Making</Typography>
 
                     <Typography>
-                        I tend to make decisions based on my values and intuition, looking for opportunities that align
-                        with my passions. I take risks when I feel inspired and believe in the potential for growth.
+                        I tend to make decisions based on my values and intuition, looking for opportunities that align with my passions. I take risks when I feel inspired and believe in the potential for growth.
                     </Typography>
 
                     <Typography sx={classes.titleLeft}>How I Interact with Others</Typography>
 
                     <Typography>
-                        As an ENFP-T, I am sociable and enjoy meaningful conversations with people. I connect easily
-                        with others, often making them feel heard and understood. However, I can sometimes overcommit
-                        myself to social engagements or group projects due to my desire to please others.
+                        As an ENFP-T, I am sociable and enjoy meaningful conversations. I connect easily with others, often making them feel heard and understood. However, I can sometimes overcommit to social engagements or group projects due to my desire to please others.
                     </Typography>
                 </Box>
 
