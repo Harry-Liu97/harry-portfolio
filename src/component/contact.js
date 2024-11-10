@@ -13,6 +13,7 @@ const classes = {
     root: {
         width: '90%',
         minHeight: '100px',
+        paddingTop: '80px',
         margin: '0 auto',
     },
     rightContainer: {

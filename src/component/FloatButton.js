@@ -2,6 +2,12 @@ import * as React from 'react'
 import { Box, Button } from "@mui/material"
 import 'animate.css/animate.min.css'
 import './animation-style.css'
+import SpeedDial from '@mui/material/SpeedDial'
+import SpeedDialIcon from '@mui/material/SpeedDialIcon'
+import SpeedDialAction from '@mui/material/SpeedDialAction'
+import ChatIcon from '@mui/icons-material/Chat'
+import EmailIcon from '@mui/icons-material/Email'
+
 
 const classes = {
     root: {
@@ -14,32 +20,48 @@ const classes = {
         pointerEvents: 'none'
     },
     buttonStyle: {
-        width: 80,
-        height: 80,
         position: 'absolute', 
         bottom: 40, 
         right: 40,
-        borderRadius: '50%',
-        backgroundColor: '#3f51b5',
-        color: '#fff',
-        border: '2px solid rgba(255, 255, 255, 0.2)',
-        '&:hover': {
-            backgroundColor: '#303f9f',
-        },
-        boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.5)', 
         pointerEvents: 'auto'
     }
 }
 
-
+const actions = [
+    { icon: <EmailIcon />, name: 'Email', link: '#contact' },
+    { icon: <ChatIcon />, name: 'Chat' },
+]
 
 
 const FloatButton = () => {
     return(
         <Box sx={classes.root}>
-            <Button sx={classes.buttonStyle} className='animate__animated animate__pulse'>
-                Hire Me
-            </Button>
+        
+            <SpeedDial
+                ariaLabel="SpeedDial basic example"
+                sx={{
+                    ...classes.buttonStyle,
+                    '& .MuiSpeedDial-fab': {
+                        width: 70,
+                        height: 70, 
+                    }
+                }}
+                icon={<SpeedDialIcon />}
+                className='animate__animated animate__pulse'
+            >
+                {actions.map((action) => (
+                    <SpeedDialAction
+                        key={action.name}
+                        icon={action.icon}
+                        tooltipTitle={action.name}
+                        onClick={() => {
+                            if (action.name === 'Email') {
+                                window.location.href = `${action.link}`;
+                            }
+                        }}
+                    />
+                ))}
+            </SpeedDial>
         </Box>
     )
 }

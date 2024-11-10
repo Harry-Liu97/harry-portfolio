@@ -19,12 +19,12 @@
         transform: scale(1)
     }
     50% {
-        transform: scale(1.2)
+        transform: scale(1.1)
     }
 }
 
 .animate__pulse {
-    animation: customPulse 2s infinite;
+    animation: customPulse 3s infinite;
 }
 
 .animate__fadeIn {
