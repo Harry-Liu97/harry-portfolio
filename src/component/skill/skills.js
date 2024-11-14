@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Box, Grid, Typography, Link } from "@mui/material"
 import 'animate.css/animate.min.css'
-import './animation-style.css'
+import '../animation-style.css'
 import PropTypes from 'prop-types'
 import CircularProgress from '@mui/material/CircularProgress'
 import Tab from '@mui/material/Tab'
@@ -9,7 +9,7 @@ import TabContext from '@mui/lab/TabContext'
 import TabList from '@mui/lab/TabList'
 import TabPanel from '@mui/lab/TabPanel'
 import { useInView } from 'react-intersection-observer'
-import skillPhoto from '../assets/skills.jpg'
+import skillPhoto from '../../assets/skills.jpg'
 
 const classes = {
     root: {

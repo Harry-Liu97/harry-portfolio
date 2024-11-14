@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react"
 import 'animate.css/animate.min.css'
-import './animation-style.css'
+import '../animation-style.css'
 import { Box, Grid, Typography, Button } from "@mui/material"
 import OpenInNewIcon from '@mui/icons-material/OpenInNew'
-import photoCartoon from '../assets/photo-cartoon.jpg'
-import photo from '../assets/photo.jpg'
+import photoCartoon from '../../assets/photo-cartoon.jpg'
+import photo from '../../assets/photo.jpg'
 
 const classes = {
     root: {

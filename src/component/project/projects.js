@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react"
 import { Grid, Box, Typography, Button, Link, Card, CardContent, CardActions, CardMedia, Tab } from "@mui/material"
 import 'animate.css/animate.min.css'
-import './animation-style.css'
+import '../animation-style.css'
 import { projects_All, projects_Web, projects_Other} from "./projectList"
 import TabContext from '@mui/lab/TabContext'
 import TabList from '@mui/lab/TabList'
 import TabPanel from '@mui/lab/TabPanel'
 import { useInView } from 'react-intersection-observer'
 import OpenInNewIcon from '@mui/icons-material/OpenInNew'
-import githubIcon from '../assets/github.svg'
+import githubIcon from '../../assets/github.svg'
 
 const classes = {
     root: {

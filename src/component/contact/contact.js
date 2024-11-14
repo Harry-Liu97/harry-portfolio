@@ -3,11 +3,11 @@ import { Box, Grid, Typography, Button, TextField, Link } from "@mui/material"
 import { useForm, ValidationError } from '@formspree/react'
 import { useInView } from 'react-intersection-observer'
 import 'animate.css/animate.min.css'
-import './animation-style.css'
-import githubIcon from '../assets/github.svg'
-import linkedinIcon from '../assets/linkedin.svg'
-import instagramIcon from '../assets/ins.svg'
-import photoCrayon from '../assets/photo-crayon.jpg'
+import '../animation-style.css'
+import githubIcon from '../../assets/github.svg'
+import linkedinIcon from '../../assets/linkedin.svg'
+import instagramIcon from '../../assets/ins.svg'
+import photoCrayon from '../../assets/photo-crayon.jpg'
 
 const classes = {
     root: {

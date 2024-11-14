@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Typography} from "@mui/material"
-import '../component/font-style.css'
+import '../../component/font-style.css'
 
 const classes = {
     root: {

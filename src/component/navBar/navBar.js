@@ -1,11 +1,11 @@
 import React, {useState} from "react"
-import '../component/font-style.css'
+import '../font-style.css'
 import 'animate.css/animate.min.css'
-import './animation-style.css'
+import '../animation-style.css'
 import { Box, Typography, Link, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText } from "@mui/material"
-import githubIcon from '../assets/github.svg'
-import linkedinIcon from '../assets/linkedin.svg'
-import instagramIcon from '../assets/ins.svg'
+import githubIcon from '../../assets/github.svg'
+import linkedinIcon from '../../assets/linkedin.svg'
+import instagramIcon from '../../assets/ins.svg'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 

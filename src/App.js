@@ -1,15 +1,15 @@
 import React from "react"
 import { Box } from "@mui/material"
-import NavBar from "./component/navBar"
-import FloatButton from "./component/FloatButton"
-import Introduction from './component/introduction'
-import About from "./component/about"
+import NavBar from "./component/navBar/navBar"
+import FloatButton from "./component/floatbutton/FloatButton"
+import Introduction from './component/introduction/introduction'
+import About from "./component//about/about"
 import Personality from "./component/personality/mbti"
-import PersonalGrowthTimeline from "./component/timeline"
-import Skills from "./component/skills"
-import Projects from "./component/projects"
-import Contact from './component/contact'
-import Footer from "./component/footer"
+import PersonalGrowthTimeline from "./component/timeline/timeline"
+import Skills from "./component/skill/skills"
+import Projects from "./component/project/projects"
+import Contact from './component/contact/contact'
+import Footer from "./component/footer/footer"
 
 const classes = {
   root: {

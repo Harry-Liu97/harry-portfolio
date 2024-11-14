@@ -1,7 +1,7 @@
 import React from "react"
 import { useInView } from 'react-intersection-observer'
 import 'animate.css/animate.min.css'
-import './animation-style.css'
+import '../animation-style.css'
 import { Box, Typography } from "@mui/material"
 import Tab from '@mui/material/Tab'
 import TabContext from '@mui/lab/TabContext'

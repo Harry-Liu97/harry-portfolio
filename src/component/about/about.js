@@ -1,8 +1,8 @@
 import React from "react"
 import { Box, Grid, Typography } from "@mui/material"
-import photo from '../assets/aboutImage.jpg'
+import photo from '../../assets/aboutImage.jpg'
 import 'animate.css/animate.min.css'
-import './animation-style.css'
+import '../animation-style.css'
 
 const classes = {
     root: {
