@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import theme from "../../styles/theme"
 import '../font-style.css'
 import 'animate.css/animate.min.css'
 import '../animation-style.css'
@@ -21,7 +22,7 @@ const classes = {
         position: 'fixed', 
         top: 0,         
         left: 0,           
-        backgroundColor: '#D3D3D3',
+        backgroundColor: theme.palette.primary.dark,
         zIndex: 10,
     },
     textGroup: {
@@ -47,7 +48,7 @@ const classes = {
         margin: '0 20px',
         fontWeight: 'bold',
         fontSize: '1.2rem',
-        fontFamily: 'Georgia, serif',
+        fontFamily: theme.typography.fontFamily,
     },
     myName: {
         width:  {
@@ -134,7 +135,7 @@ const NavBar = () => {
                 ))}
             </List>
 
-                <Typography sx={{ margin: '20px 0 20px 20px', fontSize: '1.2rem', fontFamily:  'Georgia, serif'}}>
+                <Typography sx={{ margin: '20px 0 20px 20px', fontSize: '1.2rem', fontFamily:  theme.typography.fontFamily}}>
                     Let's Connect
                 </Typography>
 

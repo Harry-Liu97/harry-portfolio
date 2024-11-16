@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import theme from "../../styles/theme"
 import { Box, Grid, Typography } from "@mui/material"
 import LinearProgress from '@mui/material/LinearProgress'
 import { useInView } from 'react-intersection-observer'
@@ -17,7 +18,7 @@ const classes = {
     leftContainer: {
         margin: '20px 0',
         padding: '30px',
-        backgroundColor: '#D3D3D3', 
+        backgroundColor: theme.palette.primary.dark, 
         borderRadius: '20px'
     },
     rightContainer: {

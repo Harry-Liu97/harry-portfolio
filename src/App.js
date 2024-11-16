@@ -1,4 +1,5 @@
 import React from "react"
+import theme from "./styles/theme"
 import { Box } from "@mui/material"
 import NavBar from "./component/navBar/navBar"
 import FloatButton from "./component/floatbutton/FloatButton"
@@ -15,7 +16,7 @@ const classes = {
   root: {
     width: '100vw',
     minHeight: '100vh',
-    backgroundColor: '#E5E5E5'
+    backgroundColor: theme.palette.primary.main
   }
 }
 

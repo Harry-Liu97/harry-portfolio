@@ -1,4 +1,5 @@
 import React from "react"
+import theme from "../../styles/theme"
 import { Box, Grid, Typography, Button, TextField, Link } from "@mui/material"
 import { useForm, ValidationError } from '@formspree/react'
 import { useInView } from 'react-intersection-observer'
@@ -32,7 +33,7 @@ const classes = {
         margin: '20px 0',
         textAlign: 'center',
         borderRadius: '30px',
-        backgroundColor: '#D3D3D3', 
+        backgroundColor: theme.palette.primary.dark, 
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.4)',
     },
     inputBox: {

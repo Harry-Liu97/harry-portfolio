@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import theme from "../../styles/theme"
 import 'animate.css/animate.min.css'
 import '../animation-style.css'
 import { Box, Grid, Typography, Button } from "@mui/material"
@@ -67,7 +68,7 @@ const classes = {
     },
     textContent: {
         width: '90%',
-        fontFamily: 'Georgia, serif'
+        fontFamily: theme.typography.fontFamily
     },
     buttonResume: {
         width: {

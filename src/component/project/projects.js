@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import theme from "../../styles/theme"
 import { Grid, Box, Typography, Button, Link, Card, CardContent, CardActions, CardMedia, Tab } from "@mui/material"
 import 'animate.css/animate.min.css'
 import '../animation-style.css'
@@ -25,7 +26,7 @@ const classes = {
     textTitle: {
         fontSize: '1.2rem',
         fontWeight: 'bold',
-        fontFamily: 'Georgia, serif'
+        fontFamily: theme.typography.fontFamily
     },
     buttonLink: {
         color: '#000000',

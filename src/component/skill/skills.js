@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import theme from "../../styles/theme"
 import { Box, Grid, Typography, Link } from "@mui/material"
 import 'animate.css/animate.min.css'
 import '../animation-style.css'
@@ -127,7 +128,7 @@ const CardItem = ( {number} ) => {
     return (
         <Box sx={{ textAlign: 'center' }} ref={ref}>
             <CircularProgressWithLabel value={progress} progressColor={'#D73332'} />
-            <Typography sx={{ fontSize: '1.3rem', fontFamily: 'Georgia, serif', fontWeight: 'bold', marginTop: '10px' }}>
+            <Typography sx={{ fontSize: '1.3rem', fontFamily: theme.typography.fontFamily, fontWeight: 'bold', marginTop: '10px' }}>
                     Overview
             </Typography>
         </Box>
@@ -248,7 +249,7 @@ const Skills = () => {
                         borderRadius: '30px',
                         padding: '10px',
                         marginTop: '20px',
-                        backgroundColor: '#D3D3D3', 
+                        backgroundColor: theme.palette.primary.dark, 
                     }}
                 >
                     <TabContext value={value}>

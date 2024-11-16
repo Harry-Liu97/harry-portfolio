@@ -1,4 +1,5 @@
 import React from "react"
+import theme from "../../styles/theme"
 import { Box, Grid, Typography } from "@mui/material"
 import photo from '../../assets/aboutImage.jpg'
 import 'animate.css/animate.min.css'
@@ -33,7 +34,7 @@ const classes = {
     },
     textContent: {
         padding: '10px 0',
-        fontFamily: 'Georgia, serif'
+        fontFamily: theme.typography.fontFamily
 
     },
     rightContainer: {
@@ -63,7 +64,7 @@ const classes = {
         fontWeight: 600
     },
     expDes: {
-        fontFamily: 'Georgia, serif'
+        fontFamily: theme.typography.fontFamily
     },
     expBox: {
         margin: '20px 0'
