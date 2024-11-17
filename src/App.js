@@ -6,7 +6,7 @@ import FloatButton from "./component/floatbutton/FloatButton"
 import Introduction from './component/introduction/introduction'
 import About from "./component//about/about"
 import Personality from "./component/personality/mbti"
-import PersonalGrowthTimeline from "./component/timeline/timeline"
+import TimeGit from "./component/timeline&git/timeGitContainer"
 import Skills from "./component/skill/skills"
 import Projects from "./component/project/projects"
 import Contact from './component/contact/contact'
@@ -28,7 +28,7 @@ function App() {
       <Introduction />
       <About />
       <Personality />
-      <PersonalGrowthTimeline />
+      <TimeGit />
       <Skills />
       <Projects />
       <Contact />
