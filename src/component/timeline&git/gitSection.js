@@ -10,8 +10,19 @@ const classes = {
     root: {
         width: '100%',
         minHeight: '100px',
+        padding: {
+            sm: '20px',
+            xs: '0'
+        },
         display: 'flex',
+        textAlign: {
+            sm: 'left',
+            xs: 'center'
+        },
         flexDirection: 'column',
+        borderRadius: '30px',
+        backgroundColor: theme.palette.primary.dark,
+        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.4)',
     },
     dataContainer: {
         width: '90%',
@@ -22,7 +33,7 @@ const classes = {
         },
         justifyContent: 'space-between',
         alignItems: 'center',
-        margin: '0 0 30px 0'
+        margin: '0 auto 30px'
     },
     avatar: {
         width: '150px',
@@ -86,7 +97,7 @@ const GitDisplay = () => {
 
             <Box
                 component='img'
-                sx={{ opacity: inView ?'1':'0' }}
+                sx={{ padding: '0 10px 10px', opacity: inView ?'1':'0' }}
                 className={inView ? "animate__animated animate__fadeIn" : ""}
                 src="https://ghchart.rshah.org/Harry-Liu97"
             />
