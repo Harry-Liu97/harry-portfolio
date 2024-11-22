@@ -102,3 +102,4 @@ Make sure you have the following tools installed:
 - **Component Refactoring**: Refactor components under the `component` folder.
 - **Live Chat**: Integrate a live chat feature.
 - **Testing**: Add automated tests for React components.
+- **Image Redesign**: Update images to better align with section themes.
