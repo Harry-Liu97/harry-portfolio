@@ -80,7 +80,19 @@ Make sure you have the following tools installed:
     yarn install
    ```
 
-3. **Start the Development Server**
+3. **Create a new .env file**
+
+    ```
+    touch .env
+    ```
+
+4. **Update the .env file with your actual API keys, replacing the placeholders. It should look like this**
+
+    ```
+    REACT_APP_ENDPOINT=your_actual_formspree_api_key
+    ```
+
+5. **Start the Development Server**
 
     Run the React development server locally:
 
@@ -91,7 +103,7 @@ Make sure you have the following tools installed:
     Or using yarn:
 
     ```
-        yarn start
+    yarn start
     ```
 
 ## Future Enhancements
